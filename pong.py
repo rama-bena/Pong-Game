@@ -21,14 +21,6 @@ window.tracer(0)
 score_a = 0
 score_b = 0
 
-#* KONSTANTA
-INCREASE_SPEED = 0.01
-DEFAULT_SPEED  = 0.05
-
-#* Score
-score_a = 0
-score_b = 0
-
 #* Paddle A
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
@@ -100,8 +92,8 @@ def write_score():
     pen.write(f"Player A:{score_a}  Player B: {score_b}", align='center', font=('Courier', 24, 'normal'))
 
 def speed_add():
-    ball.dx += -INCREASE_SPEED if ball.dx<0 else INCREASE_SPEED
-    ball.dy += -INCREASE_SPEED if ball.dy<0 else INCREASE_SPEED
+    ball.dx += -1*INCREASE_SPEED if ball.dx<0 else INCREASE_SPEED
+    ball.dy += -1*INCREASE_SPEED if ball.dy<0 else INCREASE_SPEED
 
 def speed_reset():
     ball.dx = DEFAULT_SPEED
