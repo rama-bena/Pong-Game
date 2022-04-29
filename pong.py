@@ -21,6 +21,14 @@ window.tracer(0)
 score_a = 0
 score_b = 0
 
+#* KONSTANTA
+INCREASE_SPEED = 0.01
+DEFAULT_SPEED  = 0.05
+
+#* Score
+score_a = 0
+score_b = 0
+
 #* Paddle A
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
